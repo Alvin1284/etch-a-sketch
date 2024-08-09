@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
+    <style>
+        
+        body {
+            background-image: url(images/squares.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(8, 3, 49);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+            color: brown;
+        }
+
+        .container {
+            background-color: aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            width: 320px;
+            height: 320px;
+        }
+
+        .square {
+            width: 20px;
+            height: 20px;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+
+        button {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
+    <h1>Alvin's Squares</h1>
+    <button id="resizeButton">Resize Button</button>
+    <div class="container" id="container">
+
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
