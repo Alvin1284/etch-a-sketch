@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <style>
-        
         body {
             background-image: url(images/squares.jpg);
             background-size: cover;
@@ -31,9 +30,11 @@
             background-color: aliceblue;
             display: flex;
             flex-wrap: wrap;
-            justify-content: end;
+            justify-content: center;
             width: 320px;
             height: 320px;
+            margin-bottom: 20px;
+
         }
 
         .square {
@@ -48,13 +49,29 @@
             padding: 10px 20px;
             font-size: 16px;
             text-align: center;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(255, 255, 255, 0.8);
+        }
+        .btn  {
+            display: flex;
+            gap: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(255, 255, 255, 1);
         }
     </style>
 </head>
 
 <body>
     <h1>Alvin's Squares</h1>
-    <button id="resizeButton">Resize Button</button>
+    <div class="btn">
+        <button id="resizeButton">Resize Grid</button>
+        <button id="resetButton">Reset Grid</button>
+        <button id="randomButton">Random Colors</button>
+    </div>
     <div class="container" id="container">
 
     </div>

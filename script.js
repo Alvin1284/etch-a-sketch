@@ -53,5 +53,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    resetButton.addEventListener('click', () =>{
+        document.querySelectorAll('.square').forEach(square => {
+            square.dataset.lightness = 1;
+            // square.style.backgroundColor = `rgb(${randomRGBValue()}, ${randomRGBValue()}, ${randomRGBValue()}`;
+            square.style.backgroundColor = 'aliceblue';
+
+        });
+            
+        });
+
+    randomButton.addEventListener('click', () => {
+        document.querySelectorAll('.square').forEach(square => {
+        square.dataset.lightness = 1;
+        square.style.backgroundColor = `rgb(${randomRGBValue()}, ${randomRGBValue()}, ${randomRGBValue()}`;
+    });
+});
+
+    
+    
+
     createGrid(16);
 });
